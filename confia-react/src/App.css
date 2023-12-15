@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto:wght@300&display=swap");
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+}
+.login-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.right {
+    width: 50%;
+    height: 100%;
+    background: url("../src/assets/Asset_3.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.left {
+    width: 60%;
+    height: 100%;
+    padding: 20px 20px 40px 60px;
+}
+.logo {
+    width: 5rem;
+}
+
+.form {
+    margin-top: 4rem;
+    margin-left: 4rem;
+    padding: 0 3rem;
+}
+.title {
+    color: var(--primeary, #f29e58);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+.submit {
+    cursor: pointer;
+}
+.label {
+    color: var(--semi-dark-booton, #666);
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+}
+.form-container div input {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.1);
+    padding-left: 0.5rem;
+    width: 20rem;
+    height: 2.5rem;
+    font-size: 13px;
+    outline: none;
+}
+.submit {
+    border-radius: 10px;
+    width: 7rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 1.2rem;
+    background: var(--primeary, #f29e58);
+    box-shadow: 0px 4px 9px -2px rgba(0, 0, 0, 0.08);
+    color: #fff2df;
+    font-weight: 600;
+}
