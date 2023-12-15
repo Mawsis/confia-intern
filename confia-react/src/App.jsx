@@ -1,10 +1,10 @@
-// import { Button } from "@/components/ui/button";
-import Signup from "./pages/Signup";
+// import Signup from "./pages/Signup";
+import Setup from "./pages/Setup";
 import "./App.css";
 export default function App() {
     return (
         <>
-            <Signup />
+            <Setup />
         </>
     );
 }
