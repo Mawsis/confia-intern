@@ -32,7 +32,9 @@ class UserController extends Controller
             'email' => $request->email,
             'password' => bcrypt($request->password)
         ]);
-    
+
+        auth()->login($user);
+        echo request()->user();
         return response()->json($user, 201);
     }
 
