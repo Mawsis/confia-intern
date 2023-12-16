@@ -49,54 +49,7 @@ export default function Dashboard() {
                         </div>
                     </div>
                 </div>
-                <PopoverContent className="w-[450px] h-[350px] flex items-center justify-center">
-                    <div className="grid gap-4">
-                        <div className="space-y-2 mb-8">
-                            <h4 className="font-medium leading-none">
-                                New book
-                            </h4>
-                        </div>
-                        <div className="grid gap-2">
-                            <div className="grid grid-cols-3 items-center gap-4">
-                                <Label htmlFor="width">First name</Label>
-                                <Input
-                                    id="width"
-                                    placeholder="John"
-                                    className="col-span-2 h-8"
-                                />
-                            </div>
-                            <div className="grid grid-cols-3 items-center gap-4">
-                                <Label htmlFor="maxWidth">Last name</Label>
-                                <Input
-                                    id="maxWidth"
-                                    placeholder="Doe"
-                                    className="col-span-2 h-8"
-                                />
-                            </div>
-                            <div className="grid grid-cols-3 items-center gap-4">
-                                <Label htmlFor="height">Date</Label>
-                                <Input
-                                    id="height"
-                                    placeholder="12/12/2012"
-                                    className="col-span-2 h-8"
-                                />
-                            </div>
-                            <div className="grid grid-cols-3 items-center gap-4">
-                                <Label htmlFor="maxHeight">Time</Label>
-                                <Input
-                                    id="maxHeight"
-                                    placeholder="12h:30"
-                                    className="col-span-2 h-8"
-                                />
-                            </div>
-                            <div className="grid grid-cols-3 items-center gap-4 my-0 mx-auto">
-                                <button className="border border-[#F29E58] w-20 py-1 rounded-lg text-[#F29E58] hover:bg-[#F29E58] hover:text-white">
-                                    Next
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </PopoverContent>
+
                 <div className="col-span-1 row-[span_7_/_span_7] h-full w-full bg-[#FFF2DF] rounded-xl flex flex-col justify-between">
                     <form
                         className=" flex flex-col space-y-6 justify-start pt-7"
@@ -156,6 +109,54 @@ export default function Dashboard() {
                     ) : (
                         <BookingDataTable />
                     )}
+                    <PopoverContent className="w-[450px] h-[350px] flex items-center justify-center relative top-32 left-80">
+                        <div className="grid gap-4">
+                            <div className="space-y-2 mb-8">
+                                <h4 className="font-medium leading-none">
+                                    New book
+                                </h4>
+                            </div>
+                            <div className="grid gap-2">
+                                <div className="grid grid-cols-3 items-center gap-4">
+                                    <Label htmlFor="width">First name</Label>
+                                    <Input
+                                        id="width"
+                                        placeholder="John"
+                                        className="col-span-2 h-8"
+                                    />
+                                </div>
+                                <div className="grid grid-cols-3 items-center gap-4">
+                                    <Label htmlFor="maxWidth">Last name</Label>
+                                    <Input
+                                        id="maxWidth"
+                                        placeholder="Doe"
+                                        className="col-span-2 h-8"
+                                    />
+                                </div>
+                                <div className="grid grid-cols-3 items-center gap-4">
+                                    <Label htmlFor="height">Date</Label>
+                                    <Input
+                                        id="height"
+                                        placeholder="12/12/2012"
+                                        className="col-span-2 h-8"
+                                    />
+                                </div>
+                                <div className="grid grid-cols-3 items-center gap-4">
+                                    <Label htmlFor="maxHeight">Time</Label>
+                                    <Input
+                                        id="maxHeight"
+                                        placeholder="12h:30"
+                                        className="col-span-2 h-8"
+                                    />
+                                </div>
+                                <div className="grid grid-cols-3 items-center gap-4">
+                                    <button className="border border-[#F29E58] w-20 py-1 rounded-lg text-[#F29E58] hover:bg-[#F29E58] hover:text-white">
+                                        Submit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </PopoverContent>
                 </div>
             </div>
         </Popover>
