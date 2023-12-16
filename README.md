@@ -1,4 +1,4 @@
-````markdown
+
 <h1 align="center">Hotel PMS Website</h1>
 
 <p align="center">A website for Hotel Property Management System (PMS).</p>
@@ -27,7 +27,6 @@
     # Using npm
     npm install
     ```
-````
 
 ## Usage
 
@@ -53,9 +52,3 @@
 -   The project follows the Trunk Based Development workflow for efficient collaboration and continuous integration.
 -   Developers can choose to use either neovim or VS Code as their main IDE for this project.
 
-Feel free to customize this README file to suit your project's specific requirements.
-
-```
-
-This enhanced version includes enhanced headings, aligned text, and a more professional tone. It also uses HTML alignment attributes to center the main heading and provides a consistent style throughout the document.
-```
